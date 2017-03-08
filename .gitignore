@@ -1,0 +1,19 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.gradle/
+.idea/
+LE_BiMeng.iml
+build.gradle
+build/
+gradle/
+gradlew
+gradlew.bat
+import-summary.txt
+local.properties
+settings.gradle

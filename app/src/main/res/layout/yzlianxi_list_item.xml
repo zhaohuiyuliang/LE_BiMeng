@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_margin="10dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp" >
+
+        <ImageView
+            android:id="@+id/yzlianxi_list_username_imgv_headimg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:id="@+id/lin_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/yzlianxi_list_username_imgv_headimg"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/yzlianxi_list_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="4"
+                android:singleLine="true"
+                android:text="name"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/yzlianxi_list_item_call"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/yzlianxi_list_item_sendmsg"
+            android:background="@drawable/login_ok"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="拨打电话"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/yzlianxi_list_item_sendmsg"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/login_ok"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="发送信息"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+</LinearLayout>

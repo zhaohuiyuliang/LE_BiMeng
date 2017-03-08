@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:orientation="vertical" >
+	<TextView
+	    android:id="@+id/tv_title_item"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:singleLine="true"
+	    android:ellipsize="end"
+	    android:textSize="16sp"
+	    android:textStyle="bold"
+	    android:text="被高估的唯品会"/>
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="3dp"
+	    android:orientation="horizontal">
+	    <TextView
+	        android:id="@+id/tv_user_item"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="12sp"
+	        android:textColor="#777"
+	        android:text="唯品会"/>
+	    <TextView
+	        android:id="@+id/tv_date_item"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="10dp"
+	        android:textSize="12sp"
+	        android:textColor="#777"
+	        android:text="2小时前"/>
+	    </LinearLayout>
+</LinearLayout>

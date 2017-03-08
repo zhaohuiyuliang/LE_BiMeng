@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="45dip"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_tab_bg"
+    android:clickable="true"
+    android:onClick="back" >
+
+    <TextView
+        android:id="@+id/tv_back_to_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="11dp"
+        android:drawableLeft="@drawable/mm_title_back"
+        android:gravity="center_vertical"
+        android:scaleType="centerInside"
+        android:text="开黑"
+        android:textColor="@color/white" />
+
+</LinearLayout>

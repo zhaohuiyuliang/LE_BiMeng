@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="activity_log_bar_size">20dp</dimen>
+    <dimen name="fragment_yeuzhan_magin">10dp</dimen>
+    <dimen name="fragment_yeuzhan_need_persons_magin_right">55dp</dimen>
+    <dimen name="fragment_yeuzhan_need_money_magin_right">52dp</dimen>
+    <dimen name="fragment_yeuzhan_need_starttime_magin_right">1dp</dimen>
+     <dimen name="fragment_fq_list_magin_right">30dp</dimen>
+    <dimen name="fragment_yeuzhan_need_size">11sp</dimen>
+ <!-- 查看库存popwindow搜索总共的的高度 -->
+
+</resources>

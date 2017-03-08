@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">比盟</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="me_">比盟</string>
+    <string name="ball_games">开黑</string>
+    <string name="my">我</string>
+    <string name="my_ball_games">我的开黑</string>
+    <string name="about_bimeng">关于比盟</string>
+    <string name="video">视频</string>
+    <string name="red_envelope">红包</string>
+    <string name="dynamic_detailed">动态详情</string>
+    <string name="detailed">详情</string>
+    <string name="message">消息</string>
+    <string name="create_your_account">创建您的账户</string>
+    <string name="change_branch">切换主店</string>
+    <string name="my_main_store">我的主店</string>
+    <string name="launch_ball_games">发起开黑</string>
+    <string name="_text">人人都是游戏家</string>
+    <string name="person_dynamic">个人动态</string>
+    <string name="drink">饮品</string>
+    <string name="network_cost">网费</string>
+    <string name="input_new_message">输入新消息</string>
+    <string name="please_go_to_store">请去相应主店前台兑换兑换码</string>
+    <string name="determine_the_choice">确定选择</string>
+    <string name="ok">确定</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_viewpage">ViewpageActivity</string>
+    <string name="title_activity_fram">FramActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_log">LogActivity</string>
+    <string name="title_activity_regist">RegistActivity</string>
+    <string name="login_your_account">登陆您的账户</string>
+    <string name="enter_password">请输入密码</string>
+    <string name="enter_phone_number">请输入手机号</string>
+    <string name="login_on">登录 </string>
+    <string name="title_activity_tr_main">TrMainActivity</string>
+    <string name="title_activity_regist_activity3">RegistActivity3</string>
+    <string name="loading_login">正在登录，请稍候。。。</string>
+    <string name="Is_download_voice_click_later">正在下载语音，稍后点击</string>
+    <string name="Send_the_following_pictures">发送以下图片？</string>
+    <string name="desc">发送以下图片？</string>
+    <string name="cancel">取消</string>
+    <string name="publish_empty_text">想说什么…</string>
+    <string name="take_photo">拍照</string>
+    <string name="select_from_local">从相册中选取</string>
+    <string name="action_settings">Settings</string>
+    <string name="xlistview_header_hint_loading">努力加载中。。。</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">释放刷新</string>
+    <string name="xlistview_footer_hint_ready">释放加载更多</string>
+    <string name="xlistview_footer_hint_no_more">已经是最后一页了</string>
+    <string name="xlistview_footer_hint_normal">上拉加载更多</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="huan_chat_erro">环信出错登录</string>
+    <string name="verification_successful">验证成功</string>
+    <string name="send_verification_code_first">清先发送验证码</string>
+    <string name="please_enter_again">验证码错误，请重新输入</string>
+    <string name="re_send">重新发送</string>
+    <string name="send_successful">发送成功</string>
+    <string name="please_loading">正在发送。。请稍后</string>
+    <string name="operate_loading">正在操作，请稍候。。。</string>
+    <string name="password_not_same">两次密码不一样，请重新输入！</string>
+    <string name="register_success">注册成功！</string>
+    <string name="register_loading">正在注册，请稍候。。。</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="the_order_details_details">订单详情</string>
+    <string name="pay">支付</string>
+    <string name="user_agreement">用户协议</string>
+    <string name="erro_internet">网络出错</string>
+    <string name="complete">完成</string>
+    <string name="aliPay">支付宝</string>
+    <string name="user_agreen">比盟软件隐私及服务协议\n
+        第一条 特别提示\n
+        1、北京易为盟科科技有限公司（以下简称“易为盟科”）在此特别提醒您（用户）在注册成为用户之前，请认真阅读本《比盟软件许可及服务协议》（以下简称“协议”），确保您充分理解本协议中各条款，包括免除易为盟科责任的条款及限制用户权利的条款。请您审慎阅读并选择接受或不接受本协议。除非您接受本协议所有条款，否则您无权注册、登录或使用本协议所涉服务。您的注册、登录、使用等行为将视为对本协议的接受，并同意接受本协议各项条款的约束。\n2、本协议约定易为盟科与用户之间关于“比盟”软件服务（以下简称“服务”）的权利义务。“用户”是指注册、 登录、使用本服务的个人。本协议可由易为盟科随时更新， 更新后的协议条款一旦公布即代替原来的协议条款，恕不再另行通知，比盟在线修改协议条款后，如果用户不接受修改后的条款，请立即停止使用比盟在线提供的服务，用户继续使用比盟在线提供的服务将被视为接受修改后的协议。\n
+第二条 账号注册\n
+1、用户在使用本服务前需要注册一个“比盟”账号。“比盟”账号应当使用手机号码绑定注册， 请用户使用尚未与“比盟”账号绑定的手机号码，以及未被易为盟科根据本协议封禁的手机号码注册“比盟”账号。 易为盟科可以根据用户需求或产品需要对账号注册和绑定的方式进行变更，而无须事先通知用户。\n
+2、如果注册申请者有被易为盟科封禁的先例或涉嫌虚假注册及滥用他人名义注册，及其他不能得到许可的理由， 比盟在线将拒绝其注册申请。\n
+3、注册成功后，用户可以通过“比盟”软件中“我的账号”界面浏览或更改本人的个人信息。 \n
+4、用户注册时所填写的个人信息如有变动，用户需通过“个人中心”界面及时更改。 用户因未及时更改造成的损失比盟在线概不负责。\n
+第三条 服务内容\n
+1、本服务的具体内容由易为盟科根据实际情况提供，包括但不限于：（1） 广告播放：用户安装运行“比盟”软件后可以在软件界面观看广告视频或html广告；（2） 开黑：以网吧为中心的游戏开黑信息发布与参加。（3） 比盟红包：用户可以在规定时间内购买相应商品。（4）网费及饮品：购买相应产品请到指定地点网吧前台兑换。
+\n2、用户使用获得的比盟红包能够兑换的商品价格及清零制度格由易为盟科全权决定。\n
+第四条 使用规则\n
+1、用户需从官方渠道下载安装易为盟科提供的“比盟”软件（App）。\n
+2、用户安装运行“比盟”软件后，可在红包界面抢红包。\n
+3、用户可以在“比盟”软件中查看自己累计的情况。\n
+4、用户“比盟”软件中显示的累比盟红包金额数量可能与易为盟科服务器端存在统计差异，实际比盟红包金额以服务器端为准。\n
+第五条 比盟红包、钱包\n
+1、如果用户的比盟红包及钱包累计数量出现错误，用户可以自出现错误之日起90天以内向易为盟科提出更正要求， 易为盟科如果确定该用户的要求为正当合理，应在用户提出要求之日起90天以内更正错误。\n
+2、如果用户采用擅自更改“比盟”软件程序或通过刷机刷量等技术手段邀请虚假用户或在没有充分告知其他潜在用户的情况下使得该潜在用户虽然安装了“比盟”软件但没有正常使用行为的或使用黑客手段攻击易为盟科服务器等不正当手段在软件当中做出任何行为， 易为盟科视为用户作弊行为而有权取消该用户资格并删除该用户所有信息及金额， 并保留对攻击易为盟科服务器等黑客行为追究法律责任的权力。\n
+3、用户的红包金额请消费情在当自然月消费完，否则下个月红包将会清零。但用户的钱包中的金额将会被永久保留。\n
+第七条 用户账户安全\n
+1、注册用户的登陆密码管理由用户来负责，用户不应把自己的密码告诉其他第三者。\n
+2、情用户记住比盟账号及密码，如忘记可直接致电易为盟科告知实际情况作为备案，并可在以后的软件版本中进行找回。\n
+
+第八条 服务的变更、中断、终止\n
+1、因设备维修或更换、故障和通信中断等技术原因而中断业务，易为盟科可视情况事前或事后通知用户。\n
+2、易为盟科临时中断业务时将在易为盟科网站(http://www.gbimoo.com/)公告。\n
+3、如果因易为盟科临时中断业务而导致用户比盟数据丢失，易为盟科会给予丢失数据的用户相应的补偿， 具体补偿红包数量由易为盟科决定。但因不可抗力导致的业务中断发生时,易为盟科不给予用户补偿。\n
+4、当易为盟科用户发生如下情况时，易为盟科可单方面终止本协议，取消用户继续使用易为盟科产品及服务的资格：（1） 用户死亡；（2） 盗用他人的个人信息或手机；（3） 注册用户时提供虚假信息；（4） 以非法手段（包括且不限于黑客攻击等）来积累或使用；（5） 妨碍其他用户的正常使用；（6） 伪称是易为盟科的工作人员或管理人员；（7） 擅自强行更改易为盟科的计算机系统，或威胁侵入系统；（8） 擅自传播谣言，用各种手段来毁损易为盟科的名誉与妨碍易为盟科的正常营业；（9） 利用易为盟科易为盟科 \n
+第九条 用户个人隐私信息保护\n
+1、易为盟科未经用户同意不向任何第三方公开、透露用户个人隐私信息。但以下特定情形除外：（1） 易为盟科根据法律法规规定或有权机关的指示提供用户的个人隐私信息；（2） 由于用户将其用户密码告知他人或与他人共享注册帐户与密码，由此导致的任何个人信息的泄漏， 或其他非因易为盟科原因导致的个人隐私信息的泄露；（3） 用户自行向第三方公开其个人隐私信息；（4） 用户与易为盟科及合作单位之间就用户个人隐私信息的使用公开达成约定， 易为盟科因此向合作单位公开用户个人隐私信息；（5） 任何由于黑客攻击、电脑病毒侵入及其他非因易为盟科原因导致用户个人隐私信息的泄露。
+2、用户同意易为盟科可在以下事项中使用用户的个人隐私信息：（1） 向用户及时发送重要通知，如软件更新、本协议条款的变更；（2） 易为盟科内部进行审计、数据分析和研究等，以改进易为盟科的产品、服务和与用户之间的沟通；（3） 依本协议约定，易为盟科管理、审查用户信息及进行处理措施；（4） 适用法律法规规定的其他事项。\n
+ 第十一条 免责条款\n
+ 1、易为盟科提供的服务中包括广告，用户同意在使用过程中显示易为盟科与第三方供应商、 合作伙伴提供的广告。除法律法规明确规定外，用户应自行对依该广告信息进行的交易负责， 对用户因依该广告信息进行的交易或前述广告商提供的内容而遭受的损失或损害，易为盟科不承担任何责任。\n
+ 
+2、比盟中开黑功能仅仅只是游戏组队线上信息发布与参加功能，比盟用户是否具体参加，是否在参加中有不正当行为，易为盟科部承担任何责任。
+ \n
+ 第十二条 知识产权保护\n
+ 1、比盟的商标、广告业务以及所提供的有关广告内容的知识产权都归属于易为盟科。 用户从比盟获得的信息内容不经易为盟科的许可不能擅自复制、发布与出版。\n
+ 第十三条 其他\n
+ 1、易为盟科郑重提醒用户注意本协议中免除易为盟科责任和限制用户权利的条款，请用户仔细阅读，自主考虑风险。 未成年人应在法定监护人的陪同下阅读本协议。\n
+ 2、本协议的效力、解释及纠纷的解决，适用于中华人民共和国法律。若用户和易为盟科之间发生任何纠纷或争议， 首先应友好协商解决，协商不成的，用户同意将纠纷或争议提交易为盟科住所地有管辖权的人民法院管辖。\n
+ 3、本协议的任何条款无论因何种原因无效或不具可执行性，其余条款仍有效，对双方具有约束力。\n
+ 4、本协议的版权由易为盟科所有，易为盟科保留一切解释和修改的权力。\n
+ 5、本协议从2016年7月1日起适用。\n
+ \n</string>
+    <string name="note">备注：</string>
+    <string name="note_content"><html><body>根据活跃度，红包分为青铜、白银、黄金三个等级，黄金红包最多，白银其次、青铜红包最少。发起开黑、参加开黑、买网费、买饮料、发动态、红包月底清零都能增加一定的活跃度。为了能让更多的朋友融入比盟，活跃度每个月底自动归零。（暗黑小提示：只要在比盟中每个月购买一次网费，就能变成白银级别，白银的红包将是青铜的2-3倍。）</body></html></string>
+
+</resources>

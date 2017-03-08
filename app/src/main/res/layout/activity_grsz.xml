@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eae8e8"
+    android:orientation="vertical" >
+
+    <!-- 个人设置布局 -->
+
+
+    <!-- 标题布局 -->
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/bar_color"
+        android:gravity="center_vertical" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            layout="@layout/commom_back_btn" />
+
+        <TextView
+            android:id="@+id/activity_grsz_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="个人设置"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/activity_grsz_rl_touxiang"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/common_tab_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/activity_grsz_tv_nicheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="头像" />
+
+            <ImageView
+                android:id="@+id/activity_grsz_headimg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/activity_grsz_tv_nicheng_img1"
+                android:scaleType="centerInside"
+                android:src="@drawable/bg_img" />
+
+            <ImageView
+                android:id="@+id/activity_grsz_tv_nicheng_img1"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/mm_title_item" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#bcbcbc" />
+
+        <RelativeLayout
+            android:id="@+id/activity_grsz_rl_nicheng"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/common_tab_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/activity_grsz_tv_nicheng1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="昵称" />
+
+            <TextView
+                android:id="@+id/activity_grsz_tv_nicheng_real"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/activity_grsz_tv_nicheng_img2"
+                android:text="昵称" />
+
+            <ImageView
+                android:id="@+id/activity_grsz_tv_nicheng_img2"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/mm_title_item" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#bcbcbc" />
+
+        <RelativeLayout
+            android:id="@+id/activity_grsz_rl_xignbie"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/common_tab_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/activity_grsz_tv_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/activity_grsz_tv_qianming_img_xingbie"
+                android:text="男" />
+
+            <TextView
+                android:id="@+id/activity_grsz_tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="性别" />
+
+            <ImageView
+                android:id="@+id/activity_grsz_tv_qianming_img_xingbie"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/mm_title_item" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#bcbcbc" />
+
+        <RelativeLayout
+            android:id="@+id/activity_grsz_rl_qianming"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/common_tab_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/activity_grsz_tv_qianming_real"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/activity_grsz_tv_qianming_img_"
+                android:text="签名" />
+
+            <TextView
+                android:id="@+id/activity_grsz_tv_qianming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="交友宣言" />
+
+            <ImageView
+                android:id="@+id/activity_grsz_tv_qianming_img_"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/mm_title_item" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#bcbcbc" />
+
+        <RelativeLayout
+            android:id="@+id/activity_grsz_rl_zhudian"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/common_tab_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/activity_grsz_tv_wangba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/activity_grsz_tv_qianming_img_zhudian"
+                android:text="比盟网吧" />
+
+            <TextView
+                android:id="@+id/activity_grsz_tv_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:text="主店" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#eae8e8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/activity_grsz_rl_extist"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/common_tab_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/activity_grsz_tv_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="退出登录" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- 标题布局 -->
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/bar_color"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            layout="@layout/commom_back_btn" />
+
+        <TextView
+            android:id="@+id/activity_dt_detail_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/detailed"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_dt_detail_rl_pinglun"
+        android:layout_below="@+id/top_bar" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 消息详情布局 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/activity_dt_detail_imgv_headimg"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/desc"
+                    android:src="@drawable/ic_launcher" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/activity_dt_detail_imgv_headimg"
+                    android:orientation="vertical" >
+
+                    <!-- 昵称 -->
+
+                    <TextView
+                        android:id="@+id/activity_dt_detail_tv_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="哈哈"
+                        android:textColor="#5f729a" />
+                    <!-- 消息文字 -->
+
+                    <TextView
+                        android:id="@+id/activity_dt_detail_tv_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="哈哈哈" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- 消息图片 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp" >
+
+                <ImageView
+                    android:id="@+id/activity_dt_detail_imgv_contentimg"
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/desc"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="right|center" >
+
+                <ImageView
+                    android:id="@+id/activity_dt_detail_dianzan"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/xin_red" />
+
+                <TextView
+                    android:id="@+id/activity_dt_detail_username_dianzannum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:text="10" />
+
+                <ImageView
+                    android:id="@+id/activity_dt_detail_dianzan_pinglun"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/coment_pressed" />
+
+                <TextView
+                    android:id="@+id/activity_dt_detail_username_pinglunnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10" />
+            </LinearLayout>
+
+            <com.jishang.bimeng.ui.custom.view.ListViewComments
+                android:id="@+id/activity_dt_detail_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/bg_gray"
+                android:visibility="visible" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/activity_dt_detail_rl_pinglun"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#CCCCCC"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        android:weightSum="1" >
+
+        <!-- 输入框 -->
+
+        <EditText
+            android:id="@+id/activity_dt_detail_content"
+            android:layout_width="0dp"
+            android:layout_height="30dp"         
+            android:layout_weight="0.85"
+            android:background="#FFFFFF"
+            android:inputType="textMultiLine"
+            android:maxLength="100"
+            android:maxLines="6"
+            android:layout_marginLeft="10dp"
+             android:layout_gravity="center_vertical"
+            android:minHeight="30dp" />
+        <!-- 留言按钮 -->
+
+        <Button
+            android:id="@+id/activity_dt_detail_bt_confrim"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.1"
+            android:layout_marginLeft="10dp"
+            android:background="@color/light_blue"
+            android:text="发送"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

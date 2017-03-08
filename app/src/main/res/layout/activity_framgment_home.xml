@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 程序主界面UI布局 -->
+
+
+    <!-- 以下四个Fragment对应四个UI -->
+
+    <FrameLayout
+        android:id="@+id/fragment_ball_games"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/activity_fram_rg" />
+
+    <FrameLayout
+        android:id="@+id/fragment_red_envelope"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/activity_fram_rg" />
+
+    <FrameLayout
+        android:id="@+id/fragment_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/activity_fram_rg" />
+
+    <FrameLayout
+        android:id="@+id/fragment_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/activity_fram_rg" />
+
+    <!-- 底部导航栏布局 -->
+
+    <com.jishang.bimeng.utils.radiongroup.NestRadioGroup
+        android:id="@+id/activity_fram_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#2d3a4a"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <!-- 开黑 -->
+
+        <RadioButton
+            android:id="@+id/activity_fram_yuezhan"
+            style="@style/main_tab"
+            android:checked="true"
+            android:drawableTop="@drawable/icon_chat"
+            android:text="@string/ball_games" />
+
+        <!-- 红包 -->
+
+        <RadioButton
+            android:id="@+id/activity_fram_hongbao"
+            style="@style/main_tab"
+            android:drawableTop="@drawable/icon_contacts"
+            android:text="@string/red_envelope" />
+
+        <!-- 视频 -->
+
+        <RadioButton
+            android:id="@+id/activity_fram_shipin"
+            style="@style/main_tab"
+            android:drawableTop="@drawable/icon_discover"
+            android:text="@string/video" />
+
+        <!-- 消息 -->
+
+        <RelativeLayout
+            android:id="@+id/fragment_yuezhan_my"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/common_tab_bg"
+            android:gravity="center_horizontal" >
+
+            <RadioButton
+                android:id="@+id/activity_fram_xiaoxi"
+                style="@style/main_tab"
+                android:drawableTop="@drawable/icon_xiaoxi"
+                android:text="@string/message" />
+
+            <!-- 红点提示未查看消息个数 -->
+
+            <TextView
+                android:id="@+id/fragment_yuezhan_msg_number"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/unread_count_bg"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </com.jishang.bimeng.utils.radiongroup.NestRadioGroup>
+
+</RelativeLayout>

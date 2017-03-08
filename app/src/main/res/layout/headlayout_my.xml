@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/all_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/background_img"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/scrollview_header1" />
+
+        <RelativeLayout
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/scroll_view_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="100dp"
+                    android:background="#00000000"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:background="#5b000000" />
+
+                    <ImageView
+                        android:id="@+id/headlayout_headimg"
+                        android:layout_width="68dp"
+                        android:layout_height="68dp"
+                        android:layout_marginLeft="30dp"
+                        android:contentDescription="@null"
+                        android:padding="1px"
+                        android:src="@drawable/head" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignBottom="@+id/headlayout_headimg"
+                        android:layout_toRightOf="@id/headlayout_headimg" >
+
+                        <TextView
+                            android:id="@+id/user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="13dp"
+                            android:ellipsize="end"
+                            android:shadowColor="@android:color/black"
+                            android:shadowDx="3.0"
+                            android:shadowDy="3.0"
+                            android:shadowRadius="5.0"
+                            android:singleLine="true"
+                            android:text="小乐子"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/user_name"
+                            android:background="#5b000000"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                          <!--   <TextView
+                                android:id="@+id/head_haoyoudt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="好友动态"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+                            <TextView
+                               
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/white" />
+
+                            <TextView
+                                 android:id="@+id/head_wodehy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="我的好友"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/white" />
+
+                            <TextView
+                                android:id="@+id/head_fbdt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="通讯录"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" /> -->
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

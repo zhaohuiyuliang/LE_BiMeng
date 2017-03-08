@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/img_launch_ball_games_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bg_qingtong" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/yzlist_item_tv_yz_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="游戏:"
+                    android:textColor="@color/hui_text"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/yzlist_item_tv_need_persons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=" 人数:"
+                    android:textColor="@color/hui_text"
+                    android:layout_marginRight="50dp"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/yzlist_item_tv_yz_server"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="服区:"
+                    android:textColor="@color/hui_text"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/yzlist_item_tv_pay_peple_money_name"
+                    android:layout_toLeftOf="@+id/yzlist_item_tv_pay_peple_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="支付:"
+                    android:textColor="@color/shenhui_text" />
+
+                <TextView
+                    android:id="@+id/yzlist_item_tv_pay_peple_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="支付:"
+                    android:textColor="@color/hui_text"
+                    android:layout_marginRight="35dp"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/yzlist_item_tv_yz_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="发起:"
+                    android:textColor="@color/hui_text"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/yzlist_item_tv_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="时间"
+                    android:textColor="@color/hui_text"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_margin="10dp" >
+
+        <ImageView
+            android:id="@+id/yzlist_item_imgv_head"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.95"
+            android:src="@drawable/bg_qingtong" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="游戏名:" />
+
+                <TextView
+                    android:id="@+id/yzlist_item_tv_yz_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  " />
+
+                <TextView
+                    android:id="@+id/textView1_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="游戏人数:" />
+
+                <TextView
+                    android:id="@+id/yzlist_item_tv_need_persons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView1_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="服务器:" />
+
+                <TextView
+                    android:id="@+id/yzlist_item_tv_yz_server"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="  " />
+
+                <TextView
+                    android:id="@+id/yzlist_item_tv_pay_peple_money_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="发起支付:" />
+
+                <TextView
+                    android:id="@+id/yzlist_item_tv_pay_peple_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="发起人:" />
+
+                <TextView
+                    android:id="@+id/yzlist_item_tv_yz_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="   " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="地  点:" />
+
+                <TextView
+                    android:id="@+id/yzlist_item_tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true"
+                    android:text="   " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView_4_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="发起时间:" />
+
+                <TextView
+                    android:id="@+id/yzlist_item_tv_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   " />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/yzlist_item_cancel"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/login_ok"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="联系参与人"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF" />
+        <TextView
+            android:id="@+id/yzlist_item_begin"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/login_ok"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="游戏开始"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>

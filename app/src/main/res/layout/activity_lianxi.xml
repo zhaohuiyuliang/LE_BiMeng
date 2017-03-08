@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eae8e8"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/bar_color"
+        android:gravity="center_vertical" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            layout="@layout/commom_back_btn" />
+
+        <TextView
+            android:id="@+id/lianxi_activity_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/white"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/img_launch_ball_games_head"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:src="@drawable/bg_qingtong" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/yzlist_item_tv_yz_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="游戏名:"
+                    android:textColor="@color/hui_text"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/yzlist_item_tv_need_persons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="80dp"
+                    android:text=" 玩家数:"
+                    android:textColor="@color/hui_text"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/yzlist_item_tv_yz_server"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="服务器:"
+                    android:textColor="@color/hui_text"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/yzlist_item_tv_pay_peple_money_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@+id/yzlist_item_tv_pay_peple_money"
+                    android:text="支付:"
+                    android:textColor="@color/hui_text"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/yzlist_item_tv_pay_peple_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="69dp"
+                    android:text="支付:"
+                    android:textColor="@color/hui_text"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/yzlist_item_tv_yz_name_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="发起人:  "
+                    android:textColor="@color/hui_text"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/yzlist_item_tv_yz_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/yzlist_item_tv_yz_name_"
+                    android:ellipsize="end"
+                    android:maxEms="4"
+                    android:singleLine="true"
+                    android:text="发起人:"
+                    android:textColor="@color/hui_text"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/yzlist_item_tv_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:text="时间"
+                    android:textColor="@color/hui_text"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/activity_lianxi_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

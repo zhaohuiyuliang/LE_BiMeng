@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="0.0dip"
+    android:background="@color/griditems_bg" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_gv"
+        android:padding="22.0dip" >
+
+        <RelativeLayout
+            android:id="@+id/fragment_yuezhan_my"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:id="@+id/wode_list_item_imgv"
+                android:layout_width="35.0dip"
+                android:layout_height="35.0dip"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_launcher" />
+            
+            <!-- 有未查看的内容，红点提示 -->
+
+            <TextView
+                android:id="@+id/wode_list_item_msg_number"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/unread_count_bg"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="6sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/wode_list_item_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_yuezhan_my"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5.0dip"
+            android:maxLines="1"
+            android:text="1111"
+            android:textColor="#000000"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <!-- 鑳屾櫙 -->
+    <item android:id="@android:id/background"
+        android:drawable="@drawable/progress_bg_huangjin">
+    </item>
+    <!-- 浜岀骇 -->
+   <!--  <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners android:radius="5dip" />
+
+                <gradient
+                    android:angle="0"
+                    android:centerColor="#80ffb600"
+                    android:centerY="0.75"
+                    android:endColor="#a0ffcb00"
+                    android:startColor="#80ffd300" />
+            </shape>
+        </clip>
+    </item> -->
+    
+    <!-- 涓�绾� -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="5dip" />
+
+                <gradient
+                   android:angle="0"
+                    android:centerColor="#80ffb600"
+                    android:centerY="0.75"
+                    android:endColor="#ffffff"
+                    android:startColor="#ffffff" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/bar_color"
+        android:gravity="center_vertical" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            layout="@layout/commom_back_btn" />
+
+        <TextView
+            android:id="@+id/activity_wode_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_wode_rl_lingqianbao"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+        android:clickable="true"
+        android:background="@drawable/common_tab_bg" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="零钱包" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/mm_title_back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+         android:id="@+id/activity_wode_rl_shurubao"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical" 
+        android:background="@drawable/common_tab_bg"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/textView1_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            
+            android:text="收入包" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/mm_title_back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+         android:id="@+id/activity_wode_rl_huoyuedu"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/common_tab_bg" 
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/textView1_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="活跃度查询" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/mm_title_back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+         android:id="@+id/activity_wode_rl_yaoyiyao"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/common_tab_bg"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/textView1_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="摇一摇增加活跃度" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/mm_title_back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+         android:id="@+id/activity_wode_rl_qiehuanzd"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical" 
+        android:background="@drawable/common_tab_bg"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/textView1_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="切换主店" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/mm_title_back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+         android:id="@+id/activity_wode_rl_gerensz"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical" 
+        android:background="@drawable/common_tab_bg"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/textView1_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="个人设置" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/mm_title_back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+         android:id="@+id/activity_wode_rl_shenqingpw"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical" 
+        android:background="@drawable/common_tab_bg"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/textView1_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="申请成为陪玩人员" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/mm_title_back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+         android:id="@+id/activity_wode_rl_yuewansz"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/common_tab_bg" 
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/textView1_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="约玩设置" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/mm_title_back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+         android:id="@+id/activity_wode_rl_quxiaosh"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical" 
+        android:background="@drawable/common_tab_bg"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/textView1_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="取现资格审核" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/mm_title_back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+         android:id="@+id/activity_wode_rl_qiehuanzh"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical" 
+        android:background="@drawable/common_tab_bg"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/textView1_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="切换登陆账号" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/mm_title_back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+         android:id="@+id/activity_wode_rl_tuichucx"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical" 
+        android:background="@drawable/common_tab_bg"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/textView1_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="退出程序" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/mm_title_back" />
+    </RelativeLayout>
+
+</LinearLayout>

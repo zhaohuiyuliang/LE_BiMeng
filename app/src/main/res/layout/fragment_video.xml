@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eae8e8"
+    android:orientation="vertical" >
+
+    <!-- 瑙嗛UI甯冨眬 -->
+
+
+    <!-- 鏍囬甯冨眬 -->
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/bar_color"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/fragment_hongbao_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="瑙嗛"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    
+    <!-- 瑙嗛鍒楄〃 -->
+
+     <android.support.v4.widget.SwipeRefreshLayout  
+        android:id="@+id/id_swipe_ly"  
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent" >  
+  
+        <ListView  
+            android:id="@+id/id_listview"  
+            android:layout_width="match_parent"  
+            android:layout_height="match_parent" />  
+    </android.support.v4.widget.SwipeRefreshLayout>  
+
+</LinearLayout>

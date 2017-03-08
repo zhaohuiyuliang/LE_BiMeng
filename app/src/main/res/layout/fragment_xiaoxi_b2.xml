@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/bar_color"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/fragment_xiaoxi_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_xiaoxi_publish"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/common_tab_bg" >
+
+
+            <TextView
+                android:id="@+id/fragment_yuezhan_wode_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/publish_dt"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_xiaoxi_qiehuan"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/common_tab_bg" >
+
+            <TextView
+                android:id="@+id/fragment_yuewan_test_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="鍒囨崲涓诲簵"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/xiaoxi"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="3" >
+
+        <com.jishang.bimeng.activity.dt.fourway.PullListView
+            android:id="@+id/refreshlistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:listSelector="#00000000" >
+        </com.jishang.bimeng.activity.dt.fourway.PullListView>
+
+        <com.jishang.bimeng.activity.dt.fourway.RotateLayout
+            android:id="@+id/rotateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/commentLinear"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#CCCCCC"
+            android:orientation="horizontal" >
+
+            <!-- 杈撳叆妗� -->
+
+            <EditText
+                android:id="@+id/commentEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:gravity="left"
+                android:inputType="textMultiLine"
+                android:maxLength="100"
+                android:maxLines="6"
+                android:minHeight="40dp" />
+            <!-- 鐣欒█鎸夐挳 -->
+
+            <Button
+                android:id="@+id/commentButton"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="#FFFFFF"
+                android:text="鐣欒█"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

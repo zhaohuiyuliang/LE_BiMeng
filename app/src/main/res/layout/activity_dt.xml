@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jishang.bimeng.activity.dt.three.RefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/all_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/background_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/scrollview_header" />
+
+                <RelativeLayout
+                    android:id="@+id/scroll_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:fillViewport="true" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/scroll_view_head"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="100dp"
+                            android:background="#00000000"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="20dp"
+                                android:background="#5b000000" />
+
+                            <ImageView
+                                android:id="@+id/user_avatar"
+                                android:layout_width="68dp"
+                                android:layout_height="68dp"
+                                android:layout_marginLeft="30dp"
+                                android:contentDescription="@null"
+                                android:padding="1px"
+                                android:src="@drawable/head" />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignBottom="@+id/user_avatar"
+                                android:layout_toRightOf="@id/user_avatar" >
+
+                                <TextView
+                                    android:id="@+id/user_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="13dp"
+                                    android:ellipsize="end"
+                                    android:shadowColor="@android:color/black"
+                                    android:shadowDx="3.0"
+                                    android:shadowDy="3.0"
+                                    android:shadowRadius="5.0"
+                                    android:singleLine="true"
+                                    android:text="小乐子"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="15sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_below="@+id/user_name"
+                                    android:background="#5b000000"
+                                    android:gravity="center"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="好友动态"
+                                        android:textColor="@color/white"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:layout_width="1dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:background="@color/white" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="我的好友"
+                                        android:textColor="@color/white"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:layout_width="1dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:background="@color/white" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="发布动态"
+                                        android:textColor="@color/white"
+                                        android:textSize="15sp" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+                <com.jishang.bimeng.activity.dt.firstway.MyListView
+                    android:id="@+id/activity_dt_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="#00000000"
+                    android:dividerHeight="20dp" >
+                </com.jishang.bimeng.activity.dt.firstway.MyListView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</com.jishang.bimeng.activity.dt.three.RefreshLayout>

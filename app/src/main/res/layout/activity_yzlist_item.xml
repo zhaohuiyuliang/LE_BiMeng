@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/griditems_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="160dp" >
+
+        <ImageView
+            android:id="@+id/activity_yzlist_item_headimg"
+            android:layout_width="150dp"
+            android:layout_height="160dp"
+            android:src="@drawable/comment_bg" />
+
+        <RelativeLayout
+            android:layout_width="170dp"
+            android:layout_height="22dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/activity_yzlist_item_headimg"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="1dp"
+            android:background="#30ffffff" >
+
+            <TextView
+                android:id="@+id/activity_yzlist_item_huoyuedu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="5dp"
+                android:text="活跃度:" 
+                android:gravity="center"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" >
+
+        <TextView
+            android:id="@+id/activity_yzlist_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxEms="6"
+            android:singleLine="true"
+            android:text="小梅"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/activity_yzlist_item_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="女" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" >
+
+        <TextView
+            android:id="@+id/activity_yzlist_item_loacation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="主店"
+             android:singleLine="true"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" >
+
+        <TextView
+            android:id="@+id/activity_yzlist_item_qianming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="好无聊"
+             android:singleLine="true"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</LinearLayout>

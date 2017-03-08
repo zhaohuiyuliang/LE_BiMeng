@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/textView2_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="2"
+            android:background="#0193ce"
+            android:gravity="center"
+            android:text="擅长游戏"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textView3_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="#0193ce"
+            android:gravity="center"
+            android:text="服务器"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textView4_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="#0193ce"
+            android:gravity="center"
+            android:text="等级"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textView5_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="#0193ce"
+            android:gravity="center"
+            android:text="位置"
+            android:textColor="@color/white" />
+    </LinearLayout> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <ImageView
+            android:id="@+id/activity_ywdetail_item_gameimg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/bg_img" />
+
+        <TextView
+            android:id="@+id/activity_ywdetail_item_gamename"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="游戏" />
+
+        <TextView
+            android:id="@+id/activity_ywdetail_item_fwq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="服务器" />
+
+        <TextView
+            android:id="@+id/activity_ywdetail_item_dj"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="等级" />
+
+        <TextView
+            android:id="@+id/activity_ywdetail_item_position"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="位置" />
+    </LinearLayout>
+
+</LinearLayout>

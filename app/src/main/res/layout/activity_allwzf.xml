@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+       android:background="@color/bar_color"
+        android:gravity="center_vertical" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            layout="@layout/commom_back_btn" />
+
+        <TextView
+            android:id="@+id/activity_duihuan_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+
+        <RadioGroup
+            android:id="@+id/checkquote_fragment_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/activity_allwzf_yzwzf"
+                style="@style/main_data_vin"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/icon_data_select"
+                android:checked="true"
+                android:text="约战未支付订单" />
+
+            <RadioButton
+                android:id="@+id/activity_allwzf_scwzf"
+                style="@style/main_data_vin"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/icon_data_select"
+                android:layout_marginLeft="10dp"
+                android:text="商城未支付订单" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/checkquote_fragment_fl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" 
+        android:layout_marginTop="10dp">
+    </FrameLayout>
+
+</LinearLayout>

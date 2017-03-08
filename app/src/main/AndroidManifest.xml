@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jishang.bimeng"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 支持iBeancon 需要蓝牙权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 支持个推3.0 电子围栏功能 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 浮动通知权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 自定义权限 -->
+    <uses-permission android:name="getui.permission.GetuiService.com.jishang.bimeng" />
+
+    <!-- 银联需要的权限 -->
+    <uses-permission android:name="android.permission.NFC" />
+
+    <application
+        android:name=".BimmoApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        <activity
+            android:name=".welcome.StartActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 备份页没用 -->
+        <activity
+            android:name=".welcome.MainActivity"
+            android:label="@string/title_activity_main" />
+
+        <!-- 引导页 -->
+        <activity
+            android:name="com.jishang.bimeng.welcome.ViewPagerActivity"
+            android:label="@string/title_activity_main" />
+        <!-- 主页面 -->
+        <activity
+            android:name=".fragment.FragmentActivityHome"
+            android:label="@string/title_activity_fram"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 登录界面 -->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/title_activity_log" />
+
+        <!-- 注册第二步 -->
+        <activity
+            android:name=".activity.RegistActivity1"
+            android:label="@string/title_activity_regist" />
+
+        <!-- 注册第一步 -->
+        <activity
+            android:name=".activity.RegistActivity"
+            android:label="@string/title_activity_regist" />
+
+
+        <!-- 原来的注册第三步 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.RegistActivity3"
+            android:label="@string/title_activity_regist_activity3" />
+        <!-- 视频详情页 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.shipin.ShipindetailActivity"
+            android:label="@string/title_activity_regist_activity3" />
+
+        <!-- 已弃用 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.mendian.DiquAcitivity"
+            android:label="@string/title_activity_regist_activity3"
+            android:theme="@style/MyDialogStyle" />
+
+        <!-- 已弃用 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.mendian.MendianAcitivity"
+            android:label="@string/title_activity_regist_activity3"
+            android:theme="@style/MyDialogStyle" />
+        <!-- 环信appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="p2104484830#gbimoo" />
+        <!-- 声明sdk所需的service SDK核心功能 -->
+        <service android:name="com.easemob.chat.EMChatService" />
+        <!-- 环信 -->
+
+
+        <!-- 图片放大 -->
+        <activity
+            android:name="com.jishang.bimeng.ui.ActivityImg"
+            android:label="@string/title_activity_regist_activity3" />
+        <!-- 环信登录界面 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.hxchat.LogActivity_demo"
+            android:label="@string/title_activity_regist_activity3" />
+
+        <!-- 环信聊天界面 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.hxchat.ActivityChat"
+            android:label="@string/title_activity_regist_activity3" />
+
+        <!-- 搜索好友界面 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.addfd.SearchFriendActivity"
+            android:label="@string/title_activity_regist_activity3" />
+
+        <!-- 添加好友界面 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.addfd.AddFriendActivity"
+            android:label="@string/title_activity_regist_activity3" />
+        <!-- 原来的动态界面，已弃用 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.dt.DtActivity"
+            android:label="@string/title_activity_regist_activity3" />
+        <!-- 原来发布动态,已弃用 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.dt.FbdtAcitivity"
+            android:label="@string/title_activity_regist_activity3" />
+        <!-- 动态发布，图片选择 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.pickphoto.view.ImageBucketChooseActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.jishang.bimeng.activity.pickphoto.view.ImageChooseActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <!-- 发布动态界面 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.pickphoto.view.PublishActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.jishang.bimeng.activity.pickphoto.view.ImageZoomActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <!-- 已弃用 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.dt.fourway.Dt_Activity"
+            android:label="@string/title_activity_regist_activity3" />
+
+        <!-- 好友列表 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.addfd.fdlist.FdListActivity"
+            android:label="@string/title_activity_regist_activity3" />
+
+        <!-- 我的界面 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.wode.MyActivity"
+            android:label="@string/title_activity_regist_activity3" />
+        <!-- 个人设置界面 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.wode.GerenSzActivity"
+            android:label="@string/title_activity_regist_activity3" />
+        <!-- 修改昵称 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.wode.XiugaincActivity"
+            android:label="@string/title_activity_regist_activity3" />
+        <!-- 修改签名 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.wode.XiugaiqmActivity"
+            android:label="@string/title_activity_regist_activity3" />
+
+        <!-- 日期设置界面 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.yuezhan.datapick.DatapikerActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <!-- 原来的约战列表,已弃用 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.yuezhan.yzlist.YzListActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <!-- 约战支付详情 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.zhifu.ZfListActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <!-- 约玩支付详情,已弃用 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.zhifu.Yw_ZfListActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <!-- 约战支付第二个界面 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.zhifu.ActivityPayTypeChoose"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <!-- 约玩支付第二个界面，已弃用 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.zhifu.Yw_ZfTwoActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <!-- 约战支付第三个界面 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.zhifu.ActivityPayPasswordInput"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <!-- 约玩支付第三个界面 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.zhifu.Yw_Zf_threeActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <!-- 聊天历史记录 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.hxchat.ActivityChatHistory"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <!-- 约战详情页 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.yuezhan.yzlist.ActivityBallGamesDetail"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <!-- 我的约战里面的我发起的 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.yuezhan.fq.Yz_fqActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <!-- 我的约战我参与的 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.yuezhan.cj.Yz_cyActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <!-- 约玩，已弃用 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.yuewan.fq.Yw_fqActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.yuezhan.wzf.WzfddActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <!-- 约玩，已弃用 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.yuewan.wzf.Yw_WzfddActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <!-- 结账界面 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.yuezhan.fq.FenqianActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <!-- 参与人家的结账界面 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.yuezhan.fq.Fenqian_cyActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.wode.yzsz.YwSettingActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.wode.yzsz.YwgameSetting"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.yuewan.YwListActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.yuewan.Yw_detailActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.yuewan.Yw_listConfrimActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <!-- 以上为约玩界面，弃用 -->
+
+        <activity
+            android:name="com.jishang.bimeng.activity.wode.LinqianActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.wode.ActivityWallet"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.wode.HuoyueduActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.hongbao.ChaihbActivity"
+            android:label="@string/title_activity_regist_activity3"
+            android:theme="@style/MyDialogStyle" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.hongbao.GetMoneyActivity"
+            android:label="@string/title_activity_regist_activity3"
+            android:theme="@style/MyDialogStyle" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.shangcheng.ActivityShangcheng"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.zhifu.shangcheng.Sc_ZfListActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.zhifu.shangcheng.Sc_ZfTwoActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.zhifu.shangcheng.Sc_dt_ListActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.zhifu.shangcheng.Sc_Zf_threeActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.wode.scwzf.Sc_wzfActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.yuezhan.zhudian.ActivityMainStroe"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.zhifubao.ActivityAlipay"
+            android:icon="@drawable/msp_icon"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.TestActivity"
+            android:icon="@drawable/msp_icon"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.zhifubao.Yw_PayDemoActivity"
+            android:icon="@drawable/msp_icon"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.zhifubao.ActivityOrderForm"
+            android:icon="@drawable/msp_icon"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.zhifubao.ScPayDemoActivity"
+            android:icon="@drawable/msp_icon"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.zhifubao.H5PayDemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.jishang.bimeng.zhifubao.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.wode.ActivityChongzhi"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+
+        <!-- 发起约战 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.yuezhan.ActivityYuezhan"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.yuezhan.lunbo.ActivityAboutBiMeng"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+ 
+        <activity
+            android:name="com.jishang.bimeng.activity.wode.PwdSettingActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.yuezhan.MyYuezhanActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.wode.wzf.AllwzfActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.yuezhan.zhudian.QiehuanZdActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.yuezhan.fq.LianxiActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.yuezhan.fq.Lianxi_cyActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.dt.ActivityMydt"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.addfd.AdListActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.dt.detail.Detail_dtActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.wode.tixian.TixianActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.zhifu.Tx_pwdActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.hxchat.PeopleActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+        <activity
+            android:name="com.jishang.bimeng.activity.wode.DuihuanActivity"
+            android:label="@string/title_activity_regist_activity3" >
+        </activity>
+
+        <!-- 微信支付结果回调UI -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 用户协议 -->
+        <activity
+            android:name="com.jishang.bimeng.activity.wode.ActivityUserAgreement"
+            android:exported="true"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 其他人动态UI -->
+        <activity
+            android:name="com.jishang.bimeng.ui.ActivityOtherPeopleDynamic"
+            android:exported="true"
+            android:launchMode="singleTop" >
+        </activity>
+
+        <!-- umeng appkey，可忽略 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5704d6e367e58ea1f90022b7" >
+        </meta-data>
+
+        <!-- 友盟渠道信息 -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" >
+        </meta-data>
+        <!-- 友盟统计服务 -->
+
+
+        <!-- 软件更新服务 -->
+        <service android:name="com.jishang.bimeng.service.UpdateService" />
+        <!-- 软件更新服务 -->
+
+
+        <!-- 以下为个推 -->
+
+
+        <!-- 个推SDK配置开始 -->
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="vRpm6LcobsAxHrGlIF0aV6" />
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="0D8WYek6Ek8mFtArqJI7M9" />
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="0D8WYek6Ek8mFtArqJI7M9" />
+
+        <!-- 配置第三方Receiver -->
+        <receiver
+            android:name="com.jishang.bimeng.receiver.ReceiverGetuiPush"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.vRpm6LcobsAxHrGlIF0aV6" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 配置SDK核心服务 -->
+        <service
+            android:name="com.igexin.sdk.PushService"
+            android:exported="true"
+            android:label="NotificationCenter" >
+        </service>
+        <service
+            android:name="com.igexin.sdk.PushServiceUser"
+            android:exported="true"
+            android:label="NotificationCenterUser" >
+        </service>
+
+        <receiver android:name="com.igexin.sdk.PushReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.igexin.sdk.action.refreshls" />
+                <!-- 以下三项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.igexin.getuiext.service.GetuiExtService" />
+        <!-- 个推完 -->
+
+
+        <!-- 注册环信推送广播 -->
+        <receiver
+            android:name="com.jishang.bimeng.receiver.ReceiverHuanXinReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.hyphenate.sdk.push" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

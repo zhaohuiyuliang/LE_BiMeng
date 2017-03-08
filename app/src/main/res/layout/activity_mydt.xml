@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 个人动态布局 -->
+
+
+    <!-- 标题布局 -->
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/bar_color"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/fragment_xiaoxi_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_mydt_publish"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/common_tab_bg" >
+
+            <TextView
+                android:id="@+id/fragment_yuezhan_wode_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/publish_dt"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            layout="@layout/commom_back_btn" />
+    </RelativeLayout>
+
+    <!-- 动态内容展示列表 -->
+
+    <RelativeLayout
+        android:id="@+id/xiaoxi"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" >
+
+        <com.jishang.bimeng.activity.dt.fourway.PullListView
+            android:id="@+id/refreshlistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:cacheColorHint="#00000000"
+            android:dividerHeight="1dp"
+            android:listSelector="#00000000" />
+
+        <com.jishang.bimeng.activity.dt.fourway.RotateLayout
+            android:id="@+id/rotateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

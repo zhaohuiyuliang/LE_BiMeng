@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 二级列表布局 -->
+
+    <RelativeLayout
+        android:id="@+id/xiaoxi"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="3" >
+
+        <ExpandableListView
+            android:id="@+id/activity_fq_yuezhan_ep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <!-- 隐藏的布局 -->
+
+    <RelativeLayout
+        android:id="@+id/activity_fq_yuezhan_pinlun"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#CCCCCC"
+            android:orientation="horizontal" >
+
+            <!-- 输入框 -->
+
+            <EditText
+                android:id="@+id/activity_fq_yuezhan_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:gravity="left"
+                android:inputType="textMultiLine"
+                android:maxLength="100"
+                android:maxLines="6"
+                android:minHeight="40dp" />
+            <!-- 留言按钮 -->
+
+            <Button
+                android:id="@+id/activity_fq_yuezhan_bt_pinlun"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="#FFFFFF"
+                android:text="评论"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

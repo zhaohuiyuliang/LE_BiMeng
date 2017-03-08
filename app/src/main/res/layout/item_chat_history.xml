@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:layout_margin="10dp"
+    android:gravity="center_vertical" >
+
+    <RelativeLayout
+        android:id="@+id/list_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:id="@+id/avatar_container"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true" >
+
+            <!-- 头像 -->
+
+            <ImageView
+                android:id="@+id/hxhistoty_item_head"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_avatar" />
+
+            <!-- 未读消息提示 -->
+
+            <TextView
+                android:id="@+id/hxhistoty_item_head_msg_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/unread_count_bg"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <!-- 昵称 ，注意跟用户名不是一个感念 -->
+
+        <TextView
+            android:id="@+id/hxhistoty_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/avatar_container"
+            android:text="111"
+            android:textColor="#000"
+            android:textSize="16sp" />
+        
+        <!-- 最后聊天记录的时间 -->
+
+        <TextView
+            android:id="@+id/hxhistoty_item_head_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#888888"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/msg_state"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@id/avatar_container"
+            android:src="@drawable/msg_state_fail_resend"
+            android:visibility="gone" />
+
+        <!-- 最后一条聊天记录 -->
+
+        <TextView
+            android:id="@+id/hxhistoty_item_head_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/hxhistoty_item_head_time"
+            android:layout_toRightOf="@id/msg_state"
+            android:ellipsize="end"
+            android:padding="7dp"
+            android:singleLine="true"
+            android:textColor="#888888"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>
